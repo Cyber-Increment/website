@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Navigate  } from "react-router-dom";
 import Index from "./pages/index";
 import Hero from "./pages/hero";
 import About from "./pages/about";
@@ -12,7 +12,7 @@ const App = () => {
       <BannerMenu />
       <main>
         <Routes>
-          <Route path="/" element={<Navigate to ="/hero" replace />} />
+          <Route path="/" element={<Navigate to="/hero" replace />} />
           <Route path="/hero" element={<Hero />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<VCisoAdvisory />} />
