@@ -12,7 +12,7 @@ const App = () => {
       <BannerMenu />
       <main>
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<Navigate to ="/hero" replace />} />
           <Route path="/hero" element={<Hero />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<VCisoAdvisory />} />
